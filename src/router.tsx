@@ -5,6 +5,7 @@ import { AuthCallback } from './pages/auth/Callback'
 import { Claim } from './pages/auth/Claim'
 import { Passport } from './pages/customer/Passport'
 import { MerchantDashboard } from './pages/merchant/Dashboard'
+import { MerchantSettings } from './pages/merchant/Settings'
 
 export const router = createBrowserRouter([
   {
@@ -51,7 +52,7 @@ export const router = createBrowserRouter([
     path: '/m/:merchantSlug/settings',
     element: (
       <ProtectedRoute>
-        <MerchantDashboard />
+        <MerchantSettings />
       </ProtectedRoute>
     ),
   },
